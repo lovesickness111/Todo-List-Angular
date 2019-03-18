@@ -1,0 +1,72 @@
+<header class="header">
+  <div class="g-row">
+    <div class="g-col">
+      <h1 class="d-flex justify-content-center">Demo form</h1>
+    </div>
+  </div>
+</header>
+<main class="main d-flex justify-content-center">
+  <form novalidate (ngSubmit)="onSubmit()" class="col-lg-8 row justify-content-md-center" [formGroup]="rfContact">
+    <div class="col-md-12 col-lg-10 col-sm-12">
+      <div class="form-group row">
+        <label for="example-text-input" class="col-2 col-form-label">
+          Name:
+        </label>
+        <div class="col-10">
+          <input class="form-control" type="text" id="example-text-input" formControlName="contactName">
+        </div>
+      </div>
+      <div class="col alert alert-danger" role="alert" *ngIf="rfContact.controls.contactName?.hasError('required')
+         && rfContact.controls.contactName?.touched">
+        Name is required!
+      </div>
+      <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">
+          Email:
+        </label>
+        <div class="col-10">
+          <input class="form-control" type="email" id="example-email-input" formControlName="email">
+        </div>
+      </div>
+      <fieldset formGroupName="social">
+        <div class="form-group row">
+          <label for="example-url-fb" class="col-2 col-form-label">
+            Facebook:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-fb" formControlName="facebook">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="example-url-twt" class="col-2 col-form-label">
+            Twitter:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-twt" formControlName="twitter">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="example-url-web" class="col-2 col-form-label">
+            Website:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-web" formControlName="website">
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <label for="example-tel-input" class="col-2 col-form-label">
+          Tel:
+        </label>
+        <div class="col-10">
+          <input class="form-control" type="tel" id="example-tel-input" formControlName="tel">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-10 offset-2">
+          <button class="btn btn-primary" type="submit" [disabled]="!rfContact.valid">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>

@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="g-row">
+    <div class="g-col">
+      <h1 class="d-flex justify-content-center">Todo List</h1>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="g-row">
+    <div class="g-col">
+      <!-- Form Add -->
+      <app-task-form (addTask)="
+    addTask($event)"></app-task-form>
+    </div>
+    <div class="g-col">
+      <app-task-list [tasks]="taskFilted" (getTaskId)="updateStatus($event)" (deleteTask)="deleteTask($event)"
+        (taskEdited)="updateTask($event)" (showType)="switchType($event)"></app-task-list>
+    </div>
+  </div>
+</main>

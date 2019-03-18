@@ -1,0 +1,55 @@
+<div class="task-list">
+  <!-- List -->
+  <ul class="task-filters">
+      <li (click)="this.showType.emit(2)"><a class="item-task-type active" (click)="changeType($event)">View All</a></li>
+      <li (click)="this.showType.emit(0)"><a class="item-task-type" (click)="changeType($event)">In Progress</a></li>
+      <li (click)="this.showType.emit(1)"><a class="item-task-type" (click)="changeType($event)">Completed</a></li>
+    </ul>
+  <app-task-item 
+  *ngFor="let task of tasks"
+   [task]="task" 
+   (chooseItem)="updateStatus(task)" 
+   (deleteItem)="this.deleteTask.emit(task)"
+   (taskEdited)="this.taskEdited.emit(task)"
+   ></app-task-item>
+  <!-- Complete -->
+  <!-- <div class="task-item task-item--completed" tabindex="0">
+    <div class="cell">
+      <button aria-label="Mark task as completed" class="task-item__button" type="button">
+        <span class="icon material-icons icon--active">done</span>
+      </button>
+    </div>
+    <div class="cell">
+      <div class="task-item__title" tabindex="0">
+        Học Lập Trình Angular 4
+      </div>
+    </div>
+    <div class="cell">
+      <button aria-label="Edit task title" class="task-item__button" type="button">
+        <span class="icon material-icons">edit</span>
+      </button>
+      <button aria-label="Delete task" class="task-item__button" type="button">
+        <span class="icon material-icons">delete</span>
+      </button>
+    </div>
+  </div> -->
+  <!-- Editing -->
+  <!-- <div class="task-item task-item--editing" tabindex="0">
+    <div class="cell">
+
+    </div>
+    <div class="cell">
+      <div class="task-item__title" tabindex="0">
+        Học React.JS
+      </div>
+      <form class="task-form" novalidate>
+        <input autocomplete="off" autoFocus class="task-item__input" name="title" type="text">
+      </form>
+    </div>
+    <div class="cell">
+      <button aria-label="Cancel editing" class="task-item__button" type="button">
+        <span class="icon material-icons">&#xe14c;</span>
+      </button>
+    </div>
+  </div> -->
+</div>

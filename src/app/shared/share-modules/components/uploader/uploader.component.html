@@ -1,0 +1,34 @@
+<div class="container body">
+  <div class="main_container">
+
+    <div class="right_col" role="main">
+
+
+      <div class="">
+        <div class="clearfix"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Angular 4 - Upload file</h2>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel" style="height: auto;">
+
+              <div class="x_content">
+                <!-- input chọn upload file chỉ dùng để khai báo nơi upload file-->
+                <input type="file" id="fileUploadInput" accept="images/*" (change)="fileChange($event)" />
+                <!-- bắt sự kiện upload file -->
+                <div id="uploader" (click)="doUploadFile()">
+                 <i class="fa fa-picture-o"></i> {{uploadResult.uploadingText}}
+                </div>
+                <!-- thanh progress  -->
+                <div class="progress progress-striped" *ngIf="uploadResult.progress > 0">
+                  <div class="progress-bar progress-bar-success"  [ngStyle]="{'width':  uploadResult.progress+'%'}">{{uploadResult.progress}}%</div>
+                </div>
+                <!-- hiện ảnh nếu có -->
+                <img  *ngIf="uploadResult.fileUrl" src="{{uploadResult.fileUrl}}" style="width:100%;" class="img-response">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

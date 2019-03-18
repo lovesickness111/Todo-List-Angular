@@ -1,0 +1,84 @@
+<header class="header">
+  <div class="g-row">
+    <div class="g-col">
+      <h1 class="d-flex justify-content-center">Demo form builder</h1>
+    </div>
+  </div>
+</header>
+<main class="main d-flex justify-content-center">
+  <form novalidate (ngSubmit)="onSubmit()" class="col-lg-8 row justify-content-md-center" [formGroup]="rfContact">
+    <div class="col-md-12 col-lg-10 col-sm-12">
+      <div class="form-group row d-flex">
+        <label for="example-text-input" class="col-2 col-form-label">
+          Name:
+        </label>
+        <div class="col-10">
+          <input class="form-control" type="text" id="example-text-input" formControlName="contactName" required>
+        </div>
+        <div class="alert-danger" role="alert" *ngIf="rfContact.controls.contactName?.hasError('required')
+         && rfContact.controls.contactName?.touched">
+          Name is required!
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-email-input" class="col-2 col-form-label">
+          Email:
+        </label>
+        <div class="col-10">
+          <input class="form-control" type="email" id="example-email-input" formControlName="email">
+        </div>
+      </div>
+      <fieldset formGroupName="social">
+        <div class="form-group row">
+          <label for="example-url-fb" class="col-2 col-form-label">
+            Facebook:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-fb" formControlName="facebook">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="example-url-twt" class="col-2 col-form-label">
+            Twitter:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-twt" formControlName="twitter">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="example-url-web" class="col-2 col-form-label">
+            Website:
+          </label>
+          <div class="col-10">
+            <input class="form-control" type="url" id="example-url-web" formControlName="website">
+          </div>
+        </div>
+      </fieldset>
+      <div formArrayName="tels" *ngIf="tels.controls.length">
+        <div class="form-group row" *ngFor="let c of tels.controls; index as i">
+          <label class="col-md-2 col-form-label">Tel:</label>
+          <div class="col-md-10 d-flex">
+            <input type="text" class="form-control" [formControlName]="i">
+            <div class="text-right d-flex">
+              <button style="margin-left:8px" class="btn btn-info" (click)="addTel()">+</button>
+              <button style="margin-left:8px" class="btn btn-danger" (click)="removeTel(i)" *ngIf="tels.controls.length > 1">-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row d-flex justify-content-center">
+        <label class="col-md-4">Experiment's year:</label>
+        <select class="form-control col-md-7" required formControlName="experiment">
+          <option *ngFor="let item of years; index as i" [value]="item">
+            {{item}}
+          </option> 
+        </select>
+      </div>
+      <div class="form-group row">
+        <div class="col-10 offset-2">
+          <button class="btn btn-primary" type="submit" [disabled]="!rfContact.valid">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>

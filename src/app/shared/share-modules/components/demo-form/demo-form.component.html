@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="g-row">
+    <div class="g-col">
+      <h1 class="d-flex justify-content-center">Login</h1>
+    </div>
+  </div>
+</header>
+<main class="main d-flex justify-content-center">
+  <form style="width:400px" #userLogin="ngForm" (ngSubmit)="onSubmit(userLogin.value)">
+    <div class="form-group d-flex flex-wrap">
+      <label for="userName">Nhập tên đăng nhập</label>
+      <input #user type="text" class="form-control" name="userName" id="userName" aria-describedby="helpId" placeholder="nhập tên đăng nhập hoặc email"
+        ngModel>
+      <!-- {{user.className}} -->
+    </div>
+    <div class="form-group d-flex flex-wrap">
+      <label for="pwd">Nhập mật khẩu</label>
+      <input type="password" class="form-control" name="" id="pwd" aria-describedby="helpId" placeholder="">
+    </div>
+    <div class="form-group d-flex">
+      <label for="line2"></label>
+      <input type="file" class="form-control-file" name="" id="line2" placeholder="" aria-describedby="fileHelpId">
+    </div>
+    <div class="d-flex justify-content-center"><button class="d-flex btn btn-primary" type="submit">Đăng nhập</button></div>
+  </form>
+</main>
