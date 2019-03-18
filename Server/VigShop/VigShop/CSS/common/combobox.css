@@ -1,0 +1,104 @@
+.cls-wrapControl-combobox {
+    display: table;
+    border: 1px solid #c1c1c1;
+}
+
+    .cls-wrapControl-combobox .combobox-arrow-select {
+        display: table-cell;
+        width: 22px;
+        height: 22px;
+        background: #fff url(/Content/Images/Grid/trigger.png) no-repeat;
+        background-position: 0 center;
+        cursor: pointer;
+    }
+
+        .cls-wrapControl-combobox .combobox-arrow-select:hover {
+            background-position: -22px center;
+        }
+
+    .cls-wrapControl-combobox .combobox-add-icons {
+        display: table-cell;
+        width: 22px;
+        height: 22px;
+        background: #fff url(/Content/Icons/add-blue-icon.png) no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .cls-wrapControl-combobox input {
+        border: none !important;
+    }
+
+
+    .cls-wrapControl-combobox .combobox-data {
+        border: 1px solid #c1c1c1;
+        position: absolute;
+        width: 173px;
+        background-color: #fff;
+        top: 64px;
+        left: 139px;
+        display: none;
+        box-shadow: 0px 1px 5px 0px #c1c1c1;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 9999;
+    }
+
+        .cls-wrapControl-combobox .combobox-data .combobox-data-item {
+            padding: 2px 4px;
+            height: 24px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+
+.combobox .combobox-data .combobox-data-item:hover {
+    background-color: #d7e9f6;
+}
+
+[controlType="ComboboxData"]:focus {
+    border: 1px solid #ff0000;
+}
+
+.focus-default {
+    border: 1px solid #157fcc;
+}
+
+#comboboxData {
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    border: 1px solid #c1c1c1;
+    width: 200px;
+    /*top:200px;
+    left:200px;*/
+}
+
+mcombobox {
+    /*display: flex;*/
+}
+
+
+
+.comboboxData-boundlist {
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #c1c1c1;
+    width: 200px;
+    top: 200px;
+    display: none;
+}
+
+    .comboboxData-boundlist .combobox-data-item {
+        padding: 2px 4px;
+    }
+
+        .comboboxData-boundlist .combobox-data-item:hover {
+            background-color: #c1ddf1;
+            cursor: pointer;
+        }
+        .comboboxData-boundlist .combobox-data-item:focus {
+            background-color: #c1ddf1;
+            cursor: pointer;
+        }

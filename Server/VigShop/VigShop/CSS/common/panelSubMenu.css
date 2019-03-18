@@ -1,0 +1,121 @@
+﻿.submenudictionary {
+    position: absolute;
+    display: block;
+    top: 55px;
+    left: 140px;
+    width: 470px;
+    /*height: 100%;*/
+    overflow-y: auto;
+    background-color: #00577b;
+    outline: none;
+    z-index: 9999999;
+    bottom: 0;
+}
+
+
+.wrap-children {
+    /*position: absolute;
+    display: none*/
+}
+
+.cls-show-submenu {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 140px;
+    width: 235px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #00577b;
+    outline: none;
+    z-index: 9999999
+}
+
+.cls-hidden-submenu {
+    display: none !important;
+    top: 0;
+    left: 140px;
+    width: 235px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #00577b;
+    outline: none;
+    z-index: 9999999
+}
+
+.wrap-children .cls-children {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+    .wrap-children .cls-children .sub-ul-group {
+        padding: 20px 0 0 0;
+    }
+
+.wrap-children .dictionary-float {
+    margin-left: 20px;
+    display: inline-table;
+    width: 195px;
+}
+
+.wrap-children li {
+    list-style: none;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box
+}
+
+    .wrap-children li:hover a, .wrap-children li:active a {
+        color: #fff
+    }
+
+    .wrap-children li a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        margin-top: 4px;
+        text-decoration: none;
+        color: #b2d5e3;
+        padding: 2px 2px 2px 20px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box
+    }
+
+.wrap-children .line-bottom {
+    border-bottom: 1px solid #176282
+}
+
+.sub-menu-group.cls-group-slidebar {
+    background-color: #004e6e !important;
+    height: 32px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    line-height: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 16px;
+    font-weight: 700;
+    cursor: default
+}
+
+.sub-menu-group:active {
+    color: #b2d5e3;
+    cursor: pointer
+}
+
+.qlch-leftmenu-theme .cls-group-slidebar.sub-menu-group:active {
+    color: #fff;
+    cursor: default
+}
+
+.group-li-item-lasted {
+    height: 15px
+}

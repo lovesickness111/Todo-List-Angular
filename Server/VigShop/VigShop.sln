@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VigShop", "VigShop\VigShop.csproj", "{2CBE90F1-11C8-4D6F-BC03-FFBA0CB33744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{EDB1161E-6C88-46DA-B258-7B9577909AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{F4407433-52A8-4401-B156-A79A5340921A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{4A2FA3E5-B36A-4F8E-A5D1-3F6EC198EC27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{354B8AED-C93B-4D67-949A-6268FE8FEC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CBE90F1-11C8-4D6F-BC03-FFBA0CB33744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBE90F1-11C8-4D6F-BC03-FFBA0CB33744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBE90F1-11C8-4D6F-BC03-FFBA0CB33744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBE90F1-11C8-4D6F-BC03-FFBA0CB33744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB1161E-6C88-46DA-B258-7B9577909AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB1161E-6C88-46DA-B258-7B9577909AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB1161E-6C88-46DA-B258-7B9577909AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB1161E-6C88-46DA-B258-7B9577909AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4407433-52A8-4401-B156-A79A5340921A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4407433-52A8-4401-B156-A79A5340921A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4407433-52A8-4401-B156-A79A5340921A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4407433-52A8-4401-B156-A79A5340921A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2FA3E5-B36A-4F8E-A5D1-3F6EC198EC27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2FA3E5-B36A-4F8E-A5D1-3F6EC198EC27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2FA3E5-B36A-4F8E-A5D1-3F6EC198EC27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2FA3E5-B36A-4F8E-A5D1-3F6EC198EC27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{354B8AED-C93B-4D67-949A-6268FE8FEC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354B8AED-C93B-4D67-949A-6268FE8FEC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354B8AED-C93B-4D67-949A-6268FE8FEC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354B8AED-C93B-4D67-949A-6268FE8FEC58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {196D66A1-CD65-4BF6-894C-ECF0DD8B70A7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://desktop-4tbacv1:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VigShop\\VigShop.csproj
+		SccProjectName1 = VigShop
+		SccLocalPath1 = VigShop
+		SccProjectUniqueName2 = Common\\Common.csproj
+		SccProjectName2 = Common
+		SccLocalPath2 = Common
+		SccProjectUniqueName3 = Models\\Models.csproj
+		SccProjectName3 = Models
+		SccLocalPath3 = Models
+		SccProjectUniqueName4 = Repository\\Repository.csproj
+		SccProjectName4 = Repository
+		SccLocalPath4 = Repository
+		SccProjectUniqueName5 = Services\\Services.csproj
+		SccProjectName5 = Services
+		SccLocalPath5 = Services
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,175 @@
+﻿.row-margin-button-4{
+    margin-bottom:4px;
+}
+input, textarea {
+    padding: 2px 4px;
+    height: 24px;
+    border: 1px solid #c1c1c1;
+    width:100%;
+}
+
+    input:focus {
+        border: 1px solid #157fcc;
+        outline: none !important;
+    }
+
+    textarea:focus {
+        border: 1px solid #157fcc;
+        outline: none !important;
+    }
+
+textarea {
+    min-height: 50px;
+}
+
+.lbl-required {
+    color: #ff0000;
+}
+
+.btn-customer {
+    padding: 3px 3px 3px 3px;
+    height: 25px;
+    background-color: #fcfcfc !important;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.btn-customer-16-body {
+    height: 16px;
+    width: 80px;
+    display: inline-block;
+    width: auto;
+}
+
+.btn-customer:hover, .btn-customer:focus {
+    background: #fff;
+    background-color: #f8f8f8;
+    background-image: -moz-linear-gradient(top,#eff0ec,#e1f2e9) !important;
+    background-image: -webkit-linear-gradient(top,#eff0ec,#e1f2e9) !important;
+    background-image: -o-linear-gradient(top,#eff0ec,#e1f2e9) !important;
+    background-image: linear-gradient(top,#eff0ec,#e1f2e9) !important;
+    background-image: -ms-linear-gradient(top,#eff0ec,#e1f2e9) !important;
+    border-color: #0071c1 !important;
+    outline: none;
+}
+
+.btn-customer-text {
+    display: inline-block;
+    height: 16px;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: bold 12px/16px helvetica,arial,verdana,sans-serif;
+    font-weight: normal;
+}
+
+.btn-customer-icon-16 {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('/Content/Icons/Save16.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-customer-save-icon {
+    background-image: url('/Content/Icons/Save16.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-customer-saveadd-icon {
+    background-image: url('/Content/Icons/SaveAdd16.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-customer-cancel-icon {
+    background-image: url('/Content/Icons/Disable16.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-customer-help-icon {
+    background-image: url('/Content/Images/IconSprite.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-position: 0-1600px !important;
+}
+
+.cls-wrapControl-combobox {
+    display: table;
+    border: 1px solid #c1c1c1;
+}
+
+    .cls-wrapControl-combobox .combobox-arrow-select {
+        display: table-cell;
+        width: 22px;
+        height: 22px;
+        background: #fff url(/Content/Images/Grid/trigger.png) no-repeat;
+        background-position: 0 center;
+        cursor:pointer;
+    }
+    .cls-wrapControl-combobox .combobox-arrow-select:hover {
+        background-position: -22px center;
+    }
+
+    .cls-wrapControl-combobox .combobox-add-icons {
+        display: table-cell;
+        width: 22px;
+        height: 22px;
+        background: #fff url(/Content/Icons/add-blue-icon.png) no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+
+    .cls-wrapControl-combobox input {
+        border: none !important;
+    }
+
+
+    .cls-wrapControl-combobox .combobox-data {
+        border: 1px solid #c1c1c1;
+        position: absolute;
+        width: 173px;
+        background-color: #fff;
+        top: 64px;
+        left: 139px;
+        display:none;
+        box-shadow:0px 1px 5px 0px #c1c1c1;
+        max-height:200px;
+        overflow-y:auto;
+        z-index:9999;
+    }
+
+        .cls-wrapControl-combobox .combobox-data .combobox-data-item {
+            padding: 2px 4px;
+            height: 24px;
+            line-height: 24px;
+            cursor: pointer;
+        }
+
+    .combobox .combobox-data .combobox-data-item:hover {
+        background-color: #d7e9f6;
+    }
+    [controlType="ComboboxData"]:focus{
+        border:1px solid #ff0000;
+    }
+
+.focus-default {
+    border: 1px solid #157fcc;
+}
+
+#comboboxData {
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+    border: 1px solid #c1c1c1;
+    width: 200px;
+    /*top:200px;
+    left:200px;*/
+}

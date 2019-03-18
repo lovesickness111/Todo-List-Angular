@@ -1,0 +1,172 @@
+﻿body {
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.input{
+    width:100% !important;
+}
+.header-link-page, .breadcrumb-parent {
+    display: flex;
+    align-items: center;
+}
+.main-content-dialog{
+    width:99%;
+}
+    .header-link-page > div {
+        margin-left: 8px;
+    }
+
+    .breadcrumb-parent:after {
+        font-size: 20px;
+        line-height: 36px;
+        padding-left: 8px;
+        padding-right: 6px;
+        content: '▶';
+        font-family: "fontello";
+        color: #0072bc;
+        text-align: center;
+    }
+
+.frmFoodList {
+    position: absolute;
+    top: 63px;
+    left: 148px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.toolbar {
+    position: absolute;
+    width: 100%;
+    background-color: #ededed;
+    border-bottom-color: #d9d9d9;
+    padding: 4px;
+}
+
+    .toolbar .toolbar-body {
+        height: 20px;
+        min-width: 750px;
+        position: relative;
+    }
+        
+    .toolbar-item{
+       padding:2px 4px;
+       margin-right:4px;
+    }
+        .toolbar .toolbar-body  a {
+            
+        }
+
+            .toolbar .toolbar-body > .toolbar-item:hover {
+                outline: 1px solid #0072bc;
+                cursor: pointer;
+                background-color: white;
+            }
+.cls-gridPanel{
+    position:absolute;
+    right:0px;
+    left:0px;
+    top:27px;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+.no-border-left{
+    border-left:none !important;
+}
+.width-17{
+    width:17px;
+    border:none !important;
+    background-color:white;
+}
+.width-150{
+    min-width:204px;
+}
+.width-200{
+    min-width:357px;
+}
+#table-thead,#table-tbody{
+    width:100%;
+    display:block;
+}
+.th-food-name{
+    width:376px;
+}
+.th-food-notify, .th-food-code,.th-food-group,.th-food-price, .th-food-quantity{
+    width:196.8px;
+}
+    #table-thead tr th {
+        text-align: center;
+        border: 1px solid #ccc;
+        background-color: #EDEDED;
+    }
+.cls-gridPanel td {
+    border: 1px solid #ccc;
+    
+}
+.gridPanel-header-item-filter{
+    display:inline-flex;
+    width:100%;
+    height:28px;
+    padding:2px;
+}
+.btn-select-filter{
+    padding:3px 3px 3px 3px;
+    height:24px;
+    width:26px;
+    border:1px solid #ccc;
+    background-color:#fcfcfc;
+    vertical-align:middle;
+    text-align:center;
+    cursor:pointer;
+}
+.btn-select-filter:hover{
+    border:1px solid #fbb13c; 
+}
+.input-filter {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+#table-thead{
+    position:absolute;
+    top:0px;
+    left:0px;
+
+}
+#table-tbody {
+    position: absolute;
+    overflow-y:auto;
+    top: 55px;
+    left: 0px;
+}
+        /*phần css cho dialog*/
+.ui-draggable{
+    display:block;
+    z-index:100;
+}
+
+.dialog-vig {
+    border-radius: 4px;
+    padding: 0px;
+    border-width: 5px !important;
+    border-color: #0072bc !important;
+    position:absolute;
+    top:50%;
+    left:60%;
+    z-index:999;
+}
+.show-dialog {
+    border-radius: 4px;
+    padding: 0px;
+    border-width: 5px !important;
+    border-color: #0072bc !important;
+    display: block !important;
+}
+.ui-dialog-titlebar-close {
+    height: 16px !important;
+    background-image: url('/Contents/Images/IconSprite.png');
+    background-position:3px -2032px;
+    background-repeat:no-repeat;
+    border:none !important;
+}

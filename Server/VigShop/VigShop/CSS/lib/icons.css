@@ -1,0 +1,113 @@
+﻿.icon-btnFilenew, .icon-btnClock, .icon-btnDuplicate, .icon-btnView, .icon-btnDelete, .icon-btnHelp, .icon-btnSave, .icon-btnCancel, .icon-btnClose, .icon-btnUtility, .icon-btnFeedback, .icon-undo, .icon-link-undo, .misa-icon-print, .icon-link-Print, .icon-refresh, .icon-btnHelp {
+    background-image: url('/Contents/Images/IconSprite.png') !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin: 0 auto
+}
+
+.icon-pricetimer16 {
+    background-image: url('/QLNH/resources/Image/pricetimer16.png') !important;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin: 0 auto
+}
+
+.icon-undo:before {
+    content: '' !important
+}
+
+.icon-btnUtility {
+    width: 16px;
+    height: 16px;
+    background-position: 0-288px !important
+}
+
+.icon-btnClose {
+    width: 16px;
+    height: 16px;
+    background-position: 0-2160px !important
+}
+
+.icon-btnCancel {
+    width: 16px;
+    height: 16px;
+    background-position: 0-1968px !important
+}
+
+.icon-btnSave {
+    width: 16px;
+    height: 16px;
+    background-position: 0 -767px !important
+}
+
+.icon-btnFilenew {
+    height: 16px;
+    width: 16px;
+    background-position: 0-2648px !important
+}
+
+.icon-btnClock {
+    height: 16px;
+    width: 16px;
+    background-position: 0-2713px !important
+}
+
+.icon-btnDuplicate {
+    width: 16px;
+    height: 16px;
+    background-position: 0-1888px !important
+}
+
+.icon-btnView {
+    width: 16px;
+    height: 16px;
+    background-position: 0-272px !important
+}
+
+.icon-btnEdit {
+    background: url('/Contents/Images/Edit16.png') no-repeat 50% 50% !important;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    background-repeat: no-repeat
+}
+
+.icon-btnDelete {
+    width: 16px;
+    height: 16px;
+    background-position: 0-2680px !important
+}
+
+.icon-btnHelp {
+    width: 16px !important;
+    height: 16px !important;
+    background-position: 0-1600px !important
+}
+
+.icon-btnFeedback {
+    width: 16px;
+    height: 16px;
+    background-position: 0-624px
+}
+
+.icon-undo, .icon-link-undo {
+    width: 16px !important;
+    height: 16px !important;
+    background-position: 0-432px !important
+}
+
+.misa-icon-print, .icon-link-Print {
+    width: 16px;
+    height: 16px;
+    background-position: 0 -992px !important
+}
+
+.icon-refresh {
+    width: 16px !important;
+    height: 16px !important;
+    background-position: 0-2584px !important
+}
+
+.toolbar-item-icon{
+    padding-left:20px;
+}

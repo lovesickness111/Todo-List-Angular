@@ -1,0 +1,55 @@
+﻿.loading {
+    position: relative;
+}
+
+table.loading tbody:after, *.loading:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url('/Content/Icons/loadingData2.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    content: "";
+}
+
+tr:hover {
+    background-color: #c1ddf1;
+}
+
+.rowSelected {
+    background-color: #c1ddf1 !important;
+}
+
+.validate-error{
+    border-color:#ff0000;
+    border-width:1px;
+}
+
+.divError {
+    background-image: url('/Content/Icons/exclamation.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 26px !important;
+    height: 24px !important;
+}
+.border-red{
+    border:1px solid #ff0000 !important;
+}
+
+.tool-img {
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    background-image: url(../../icons/tool-sprites.png);
+    margin: 0;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+.tool-close {
+    background-position: 0 0;
+}
+

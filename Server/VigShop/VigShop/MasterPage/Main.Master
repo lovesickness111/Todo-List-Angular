@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="VigShop.MasterPage.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Giao diện admin</title>
+    <link href="/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CSS/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/lib/animation.css" rel="stylesheet" />
+    <link href="/CSS/lib/glyphicon.css" rel="stylesheet" />
+    <link href="/CSS/lib/icons.css" rel="stylesheet" />
+    <link href="/CSS/common/common.css" rel="stylesheet" />
+    <link href="/CSS/common/control.css" rel="stylesheet" />
+    <link href="/CSS/common/main.css" rel="stylesheet" />
+    <link href="/CSS/common/panelSubMenu.css" rel="stylesheet" />
+    <link rel="icon" href="/Contents/Images/Backgrounds/OKgJ-logoshoe.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo-box"></div>
+        <div class="header-right">
+            <div class="header-page-title">
+                <asp:ContentPlaceHolder ID="cphFormTitle" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="header-user-info-box">
+                <a class="header-user-info">
+                    <span class="user-avatar"></span>
+                    <span class="user-name-display">NAD</span>
+                    <i class="fa fa-cog fa-spin"></i>
+                </a>
+                <div class="user-info-menu hide-if-outside" style="display: none">
+                    <a class="user-info-menu-item icon-16 icon-change-password">Thay đổi mật khẩu</a>
+                    <a class="user-info-menu-item icon-16 icon-feedback">Góp ý với nhà phát triển</a>
+                    <a class="user-info-menu-item icon-16 icon-logout">Đăng xuất</a>
+                </div>
+                <a class="header-user-item-icon header-user-notify"></a>
+                <a class="header-user-item-icon header-user-help"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-nav-box">
+        <a href="#" class="menu-item menu-active">
+            <span class="menu-item-icon menu-item-icon-general"></span>
+            <span class="menu-item-text">Tổng quan</span>
+        </a>
+        <a href="#" submenu="#submenudictionary" class="menu-item">
+            <span class="menu-item-icon menu-item-icon-dictionary"></span>
+            <span class="menu-item-text">Danh mục</span>
+        </a>
+        <div class="hover-dropdown">
+            <a href="#settings" class="menu-item">
+                <span class="menu-item-icon menu-item-icon-settings"></span>
+                <span class="menu-item-text">Thiết lập</span>
+                <span class="glyphicon glyphicon-chevron-down" style="padding:13px"></span>
+
+            </a>
+            <div class="hover-dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="toogle-dropdown">
+            <a id="menu-help" href="#menuhelp" class="menu-item">
+                <span class="menu-item-icon menu-item-icon-menuhelp"></span>
+                <span class="menu-item-text">Trợ giúp</span>
+                <span class="glyphicon glyphicon-triangle-right" style="padding:13px"></span>
+            </a>
+            <div class="toogle-dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <div id="submenudictionary" class="submenudictionary wrap-children hide-if-outside" style="display: none">
+        <div class="cls-children scrollbar-dynamic">
+            <div class="dictionary-float">
+                <ul class="sub-ul-group">
+                    <li class="sub-menu-group cls-group-slidebar cls-group-inventoryitem">Hàng hóa</li>
+                    <li><a href="#categoryitem" routerlink="/Views/Dictionary/InventoryGroup.aspx" class="children cls-categoryitem" name="categoryitem" id="categoryitem">Nhóm hàng hóa</a></li>
+                    <li><a href="#inventoryitem" routerlink="" class="children cls-inventoryitem" name="inventoryitem" id="inventoryitem">Hàng hóa</a></li>
+                    <li><a href="#unit" routerlink="" class="children cls-unit" name="unit" id="unit">Đơn vị tính</a></li>
+                    <li><a href="#printstamp" routerlink="" class="children cls-unit" name="printstamp" id="printstamp">In tem mã</a></li>
+                    <li><a href="#pricepolicy" routerlink="" class="children cls-pricepolicy" name="pricepolicy" id="pricepolicy">Bảng giá</a></li>
+                </ul>
+            </div>
+            <div class="dictionary-float">
+                <ul class="sub-ul-group">
+                    <li class="sub-menu-group cls-group-slidebar cls-group-paymentreceipt">Thu, chi</li>
+                    <li><a href="#receipt" routerlink="" class="children" name="receipt" id="receipt">Mục thu</a></li>
+                    <li><a href="#payment" routerlink="" class="children item-lasted" name="payment" id="payment">Mục chi</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <%--script--%>
+    <%--<script src="/Scripts/Other/jquery-3.3.1.slim.min.js"></script>--%>
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="/Scripts/jquery-ui.js"></script>
+    <script src="/Scripts/Other/bootstrap.min.js"></script>
+    <script src="/Scripts/Other/holder.min.js"></script>
+    <script src="/Scripts/Other/popper.min.js"></script>
+    <script src="/Scripts/Common/common.js"></script>
+    <script src="/Scripts/Common/entity.js"></script>
+    <script src="/Scripts/Common/jquery.cookie.js"></script>
+    <script src="/Scripts/Common/resource.js"></script>
+    <script src="/Scripts/service.js"></script>
+    <script src="/Scripts/Base/base.js"></script>
+    <script src="/Scripts/Common/control.js"></script>
+    <script src="/Scripts/Common/animation.js"></script>
+    <script src="/Scripts/Other/menu.js"></script>
+    <script src="/Scripts/Views/mainMaster.js"></script>
+    <asp:ContentPlaceHolder ID="jsContent" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
